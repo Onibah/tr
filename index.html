@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231215211918" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?_v=20231215211918"></script>
+
+	<!-- Подключение библиотеки Fancybox -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20231215211918" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20231215211918"></script>
+</head>
+
+<body>
+	<div id="page-preloader" class="preloader">
+		<div class="loader"></div>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logotype-wrapper">
+					<a href="index.html" class="header__logotype main-logotype">
+						<img class="main-logotype__logo" src="img/header/logo.svg" alt="logo" />
+					</a>
+				</div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li data-spollers class="menu__item">
+								<span type="button" data-spoller class="menu__link menu__link_spoller">Услуги</span>
+								<div class="menu__item-spoller-body">
+									<a href="services-details.html" class="menu__link">Услуги детально</a>
+									<a href="services-details.html" class="menu__link">Услуги</a>
+									<a href="services-details.html" class="menu__link">Услуги</a>
+									<a href="services-details.html" class="menu__link">Услуги</a>
+								</div>
+							</li>
+
+							<li class="menu__item">
+								<a href="results.html" class="menu__link">Результаты</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto=".page__our-advantages" href="index.html#page__our-advantages" class="menu__link">О нас</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto=".questions_instructions" href="services-details.html#questions_instructions" class="menu__link">Инструкции</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto=".footer" href="#footer" class="menu__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="menu__info info-menu">
+						<a href="#" class="info-menu__adress">
+							<img class="info-menu__icon-adress" src="img/header/location_outline.svg" alt="" />
+							<span>Чебоксары, <br />
+								Энтузиастов 1А</span>
+						</a>
+						<!-- <div class="info-menu__calendar">
+					<img
+						class="info-menu__icon-calendar"
+						src="img/header/calendar.svg"
+						alt=""
+					/>
+					с 09:00 - 20:00
+					<span>пн-сб </span>
+				</div> -->
+						<a href="tel:+79003331040" class="info-menu__tel">
+							<img class="info-menu__icon-tel" src="img/header/phone.svg" alt="" />
+							+7900 333 10 40
+						</a>
+					</div>
+				</div>
+				<button type="button" class="header__button main-button open-popup">
+					Заказать звонок
+				</button>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="page__main-page main-page">
+				<div class="main-page__container">
+					<picture><source srcset="img/main-page/1.webp" type="image/webp"><img class="main-page__bg-image" src="img/main-page/1.png" alt="" /></picture>
+					<div class="main-page__body">
+						<h1 class="main-page__title">ПЕРЕСАДКА ВОЛОС В МОСКВЕ</h1>
+						<form class="main-page__form main-form">
+							<h2 class="main-form__title main-title">
+								Запишитесь на бесплатную консультацию
+							</h2>
+							<div class="main-form__body">
+								<input required type="tel" name="phone" id="main-form__tel" class="main-form__input main-form__input_border-color" placeholder="Телефон" />
+								<input required type="text" name="name" id="main-form__name" class="main-form__input main-form__input_border-color" placeholder="Имя" />
+								<button type="submit" class="main-form__button main-button-transparent">
+									Записаться
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="page__services services">
+				<div class="services__container">
+					<h2 class="services__title main-title">Наши услуги</h2>
+					<div class="services__cards cards-services">
+						<div class="cards-services__item">
+							<div class="cards-services__image-wrap">
+								<picture><source srcset="img/services/1.webp" type="image/webp"><img class="cards-services__img" src="img/services/1.jpg" alt="" /></picture>
+							</div>
+							<div class="cards-services__content">
+								<h4 class="cards-services__titile">
+									Пересадка волос на голове
+								</h4>
+								<p class="cards-services__text">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Qui, optio!
+								</p>
+								<div class="cards-services__price">от 140.000Р</div>
+								<a href="services-details.html" class="cards-services__details main-button">Подробнее</a>
+							</div>
+						</div>
+						<div class="cards-services__item">
+							<div class="cards-services__image-wrap">
+								<picture><source srcset="img/services/1.webp" type="image/webp"><img class="cards-services__img" src="img/services/1.jpg" alt="" /></picture>
+							</div>
+							<div class="cards-services__content">
+								<h4 class="cards-services__titile">
+									Пересадка волос на голове
+								</h4>
+								<p class="cards-services__text">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Qui, optio!
+								</p>
+								<div class="cards-services__price">от 140.000Р</div>
+								<a href="services-details.html" class="cards-services__details main-button">Подробнее</a>
+							</div>
+						</div>
+						<div class="cards-services__item">
+							<div class="cards-services__image-wrap">
+								<picture><source srcset="img/services/1.webp" type="image/webp"><img class="cards-services__img" src="img/services/1.jpg" alt="" /></picture>
+							</div>
+							<div class="cards-services__content">
+								<h4 class="cards-services__titile">
+									Пересадка волос на голове
+								</h4>
+								<p class="cards-services__text">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Qui, optio!
+								</p>
+								<div class="cards-services__price">от 140.000Р</div>
+								<a href="services-details.html" class="cards-services__details main-button">Подробнее</a>
+							</div>
+						</div>
+						<div class="cards-services__item">
+							<div class="cards-services__image-wrap">
+								<picture><source srcset="img/services/1.webp" type="image/webp"><img class="cards-services__img" src="img/services/1.jpg" alt="" /></picture>
+							</div>
+							<div class="cards-services__content">
+								<h4 class="cards-services__titile">
+									Пересадка волос на голове
+								</h4>
+								<p class="cards-services__text">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Qui, optio!
+								</p>
+								<div class="cards-services__price">от 140.000Р</div>
+								<a href="services-details.html" class="cards-services__details main-button">Подробнее</a>
+							</div>
+						</div>
+						<div class="cards-services__item">
+							<div class="cards-services__image-wrap">
+								<picture><source srcset="img/services/1.webp" type="image/webp"><img class="cards-services__img" src="img/services/1.jpg" alt="" /></picture>
+							</div>
+							<div class="cards-services__content">
+								<h4 class="cards-services__titile">
+									Пересадка волос на голове
+								</h4>
+								<p class="cards-services__text">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Qui, optio!
+								</p>
+								<div class="cards-services__price">от 140.000Р</div>
+								<a href="services-details.html" class="cards-services__details main-button">Подробнее</a>
+							</div>
+						</div>
+						<div class="cards-services__item">
+							<div class="cards-services__image-wrap">
+								<picture><source srcset="img/services/1.webp" type="image/webp"><img class="cards-services__img" src="img/services/1.jpg" alt="" /></picture>
+							</div>
+							<div class="cards-services__content">
+								<h4 class="cards-services__titile">
+									Пересадка волос на голове
+								</h4>
+								<p class="cards-services__text">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Qui, optio!
+								</p>
+								<div class="cards-services__price">от 140.000Р</div>
+								<a href="services-details.html" class="cards-services__details main-button">Подробнее</a>
+							</div>
+						</div>
+						<div class="cards-services__item">
+							<div class="cards-services__image-wrap">
+								<picture><source srcset="img/services/1.webp" type="image/webp"><img class="cards-services__img" src="img/services/1.jpg" alt="" /></picture>
+							</div>
+							<div class="cards-services__content">
+								<h4 class="cards-services__titile">
+									Пересадка волос на голове
+								</h4>
+								<p class="cards-services__text">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Qui, optio!
+								</p>
+								<div class="cards-services__price">от 140.000Р</div>
+								<a href="services-details.html" class="cards-services__details main-button">Подробнее</a>
+							</div>
+						</div>
+						<div class="cards-services__item">
+							<div class="cards-services__image-wrap">
+								<picture><source srcset="img/services/1.webp" type="image/webp"><img class="cards-services__img" src="img/services/1.jpg" alt="" /></picture>
+							</div>
+							<div class="cards-services__content">
+								<h4 class="cards-services__titile">
+									Пересадка волос на голове
+								</h4>
+								<p class="cards-services__text">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Qui, optio!
+								</p>
+								<div class="cards-services__price">от 140.000Р</div>
+								<a href="services-details.html" class="cards-services__details main-button">Подробнее</a>
+							</div>
+						</div>
+						<div class="cards-services__item">
+							<div class="cards-services__image-wrap">
+								<picture><source srcset="img/services/1.webp" type="image/webp"><img class="cards-services__img" src="img/services/1.jpg" alt="" /></picture>
+							</div>
+							<div class="cards-services__content">
+								<h4 class="cards-services__titile">
+									Пересадка волос на голове
+								</h4>
+								<p class="cards-services__text">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Qui, optio!
+								</p>
+								<div class="cards-services__price">от 140.000Р</div>
+								<a href="services-details.html" class="cards-services__details main-button">Подробнее</a>
+							</div>
+						</div>
+						<div class="cards-services__item">
+							<div class="cards-services__image-wrap">
+								<picture><source srcset="img/services/1.webp" type="image/webp"><img class="cards-services__img" src="img/services/1.jpg" alt="" /></picture>
+							</div>
+							<div class="cards-services__content">
+								<h4 class="cards-services__titile">
+									Пересадка волос на голове
+								</h4>
+								<p class="cards-services__text">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Qui, optio!
+								</p>
+								<div class="cards-services__price">от 140.000Р</div>
+								<a href="services-details.html" class="cards-services__details main-button">Подробнее</a>
+							</div>
+						</div>
+
+
+					</div>
+					<div class="services__bottom bottom-stages bottom-stages_bg-gray">
+						<h3 class="bottom-stages__title main-title">
+							Стоимость пересадки <br />
+							волос на голове 150 000 р.
+						</h3>
+						<button type="button" class="bottom-stages__button main-button open-popup">
+							Записаться
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="page__results results">
+				<div class="results__container">
+					<h2 class="results__title main-title">
+						Результаты пересадки волос
+					</h2>
+					<div class="results__images-list">
+						<div class="results__item">
+							<picture><source srcset="img/results/1.webp" type="image/webp"><img src="img/results/1.jpg" alt="" class="results__image" /></picture>
+						</div>
+						<div class="results__item">
+							<picture><source srcset="img/services/2.webp" type="image/webp"><img src="img/services/2.jpg" alt="" class="results__image" /></picture>
+						</div>
+						<div class="results__item">
+							<picture><source srcset="img/results/1.webp" type="image/webp"><img src="img/results/1.jpg" alt="" class="results__image" /></picture>
+						</div>
+						<div class="results__item">
+							<picture><source srcset="img/results/1.webp" type="image/webp"><img src="img/results/1.jpg" alt="" class="results__image" /></picture>
+						</div>
+					</div>
+					<a href="results.html" class="results__button main-button">
+						Смотреть еще
+					</a>
+				</div>
+			</section>
+			<section class="page__our-experts our-experts">
+				<div class="our-experts__container">
+					<h2 class="our-experts__title main-title">Наши специалисты</h2>
+					<div class="our-experts__body">
+						<div class="our-experts__buttons-control control-buttons">
+							<button type="button" class="control-buttons__slider-button-prev button-prev-our-experts">
+								<img class="control-buttons__icon-arrow" src="img/experts/arrow-prev.svg" alt="arrow" />
+							</button>
+							<button type="button" class="control-buttons__slider-button-next button-next-our-experts">
+								<img class="control-buttons__icon-arrow" src="img/experts/arrow-next.svg" alt="arrow" />
+							</button>
+						</div>
+						<div class="our-experts__slider main-slider swiper">
+							<div id="firstSliderWrapper" class="main-slider__wrapper swiper-wrapper">
+								<div class="main-slider__slide slide-main-slider swiper-slide">
+									<div class="slide-main-slider__body">
+										<div class="slide-main-slider__image-wrap">
+											<picture><source srcset="img/experts/1.webp" type="image/webp"><img class="slide-main-slider__img" src="img/experts/1.jpeg" alt="" /></picture>
+										</div>
+										<!-- <a href="#" class="slide-main-slider__button main-button"
+												>Подробнее</a
+											> -->
+										<div class="slide-main-slider__content">
+											<h4 class="slide-main-slider__title">
+												Алексей Петрович
+											</h4>
+											<p class="slide-main-slider__exp">50 лет</p>
+											<p class="slide-main-slider__job-position">Трихолог</p>
+										</div>
+									</div>
+								</div>
+								<div id="first-slider" class="main-slider__slide slide-main-slider swiper-slide">
+									<div class="slide-main-slider__body">
+										<div class="slide-main-slider__image-wrap">
+											<picture><source srcset="img/experts/4.webp" type="image/webp"><img class="slide-main-slider__img" src="img/experts/4.jpeg" alt="" /></picture>
+										</div>
+										<!-- <a href="#" class="slide-main-slider__button main-button"
+												>Подробнее</a
+											> -->
+										<div class="slide-main-slider__content">
+											<h4 class="slide-main-slider__title">
+												Алексей Петрович
+											</h4>
+											<p class="slide-main-slider__exp">50 лет</p>
+											<p class="slide-main-slider__job-position">Трихолог</p>
+										</div>
+									</div>
+								</div>
+								<div id="first-slider" class="main-slider__slide slide-main-slider swiper-slide">
+									<div class="slide-main-slider__body">
+										<div class="slide-main-slider__image-wrap">
+											<picture><source srcset="img/experts/4.webp" type="image/webp"><img class="slide-main-slider__img" src="img/experts/4.jpeg" alt="" /></picture>
+										</div>
+										<!-- <a href="#" class="slide-main-slider__button main-button"
+												>Подробнее</a
+											> -->
+										<div class="slide-main-slider__content">
+											<h4 class="slide-main-slider__title">
+												Алексей Петрович
+											</h4>
+											<p class="slide-main-slider__exp">50 лет</p>
+											<p class="slide-main-slider__job-position">Трихолог</p>
+										</div>
+									</div>
+								</div>
+								<div id="first-slider" class="main-slider__slide slide-main-slider swiper-slide">
+									<div class="slide-main-slider__body">
+										<div class="slide-main-slider__image-wrap">
+											<picture><source srcset="img/experts/4.webp" type="image/webp"><img class="slide-main-slider__img" src="img/experts/4.jpeg" alt="" /></picture>
+										</div>
+										<!-- <a href="#" class="slide-main-slider__button main-button"
+												>Подробнее</a
+											> -->
+										<div class="slide-main-slider__content">
+											<h4 class="slide-main-slider__title">
+												Алексей Петрович
+											</h4>
+											<p class="slide-main-slider__exp">50 лет</p>
+											<p class="slide-main-slider__job-position">Трихолог</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__news news">
+				<div class="news__container">
+					<h2 class="news__title main-title">Наш Блог</h2>
+					<div class="news__list list-news">
+						<div class="list-news__item">
+							<div class="list-news__image-wrap">
+								<picture><source srcset="img/news/1.webp" type="image/webp"><img src="img/news/1.jpg" alt="news image" class="list-news__image" /></picture>
+							</div>
+							<div class="list-news__body">
+								<a href="#" class="list-news__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Voluptatum, reiciendis.</a>
+								<a href="#" class="list-news__details main-button">Подробнее</a>
+							</div>
+						</div>
+						<div class="list-news__item">
+							<div class="list-news__image-wrap">
+								<picture><source srcset="img/news/1.webp" type="image/webp"><img src="img/news/1.jpg" alt="news image" class="list-news__image" /></picture>
+							</div>
+							<div class="list-news__body">
+								<a href="#" class="list-news__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Voluptatum, reiciendis.</a>
+								<a href="#" class="list-news__details main-button">Подробнее</a>
+							</div>
+						</div>
+						<div class="list-news__item">
+							<div class="list-news__image-wrap">
+								<picture><source srcset="img/news/1.webp" type="image/webp"><img src="img/news/1.jpg" alt="news image" class="list-news__image" /></picture>
+							</div>
+							<div class="list-news__body">
+								<a href="#" class="list-news__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Voluptatum, reiciendis.</a>
+								<a href="#" class="list-news__details main-button">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__questions questions">
+				<div class="questions__container">
+					<h2 class="questions__title main-title">
+						Часто задаваемые вопросы
+					</h2>
+					<div class="questions__body">
+						<div data-one-spoller data-spollers class="questions__spollers spollers-questions">
+							<div class="spollers-questions__item">
+								<button type="button" data-spoller class="spollers-questions__title">
+									Сколько времени занимает операция
+								</button>
+								<div class="spollers-questions__body">
+									Все этапы процедуры занимают как правило около 6—10 часов в
+									зависимости от объёма пересаживаемых графов, сложности и
+									деликатности работы.
+								</div>
+							</div>
+							<div class="spollers-questions__item">
+								<button type="button" data-spoller class="spollers-questions__title">
+									Это болезненная процендура
+								</button>
+								<div class="spollers-questions__body">
+									Нет. Мы работаем бесшовным методом FUE. Серьёзного
+									хирургического вмешательства он не предполагает. Минимальные
+									болевые ощущения могут возникать только на этапе анестезии
+									на кратковременный промежуток времени (не более 3—5 мин.).
+								</div>
+							</div>
+							<div class="spollers-questions__item">
+								<button type="button" data-spoller class="spollers-questions__title">
+									Когда пройдут покраснения
+								</button>
+								<div class="spollers-questions__body">
+									Период восстановления у всех индивидуальный. Покраснения
+									донорской зоны проходят в среднем за 10—20 дней. Кожа в зоне
+									трансплантации восстанавливается в течение 1—3 месяцев.
+								</div>
+							</div>
+							<div class="spollers-questions__item">
+								<button type="button" data-spoller class="spollers-questions__title">
+									Могут ли выпасть пересаженные волосы
+								</button>
+								<div class="spollers-questions__body">
+									Нет. Пересаженные волосы не выпадают. Они не подвержены
+									влиянию гормона дигидротестостерона.
+								</div>
+							</div>
+							<div class="spollers-questions__item">
+								<button type="button" data-spoller class="spollers-questions__title">
+									Когда будет виден результат
+								</button>
+								<div class="spollers-questions__body">
+									Первый результат вы увидите спустя 10—14 дней. За это время
+									пересаженные волосы как правило отрастают на 0,3—0.5 см (так
+									называемый «Ёжик»). Густота же начнёт появляться на 6—8
+									месяце после процедуры. Итоговый результат можно оценивать
+									спустя 10—12 месяцев.
+								</div>
+							</div>
+							<div class="spollers-questions__item">
+								<button type="button" data-spoller class="spollers-questions__title">
+									Можно ли после операции носить головной убор
+								</button>
+								<div class="spollers-questions__body">
+									Мы рекомендуем надевать головной убор не ранее чем через 10
+									дней с момента операции. В случае острой необходимости на
+									5-й день можно аккуратно надеть панамку. Главное, чтобы она
+									не давила на голову и свободно сидела.
+								</div>
+							</div>
+							<div class="spollers-questions__item">
+								<button type="button" data-spoller class="spollers-questions__title">
+									Есть ли рассрочка
+								</button>
+								<div class="spollers-questions__body">
+									Да! Мы понимаем, что не у всех есть возможность оплатить всю
+									стоимость процедуры сразу, поэтому даём возможность оформить
+									рассрочку. Рассрочка оформляется через Банк, при его
+									одобрении. ООО «ГеоГрафт» берёт часть нагрузки рассрочки на
+									себя.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__our-advantages our-advantages">
+				<div class="our-advantages__container">
+					<h2 class="our-advantages__title main-title">Наши преимущества</h2>
+
+					<div class="our-advantages__list">
+						<div class="our-advantages__item advantages-item">
+							<div class="advantages-item__image-wrap">
+								<img src="img/advantages/1.svg" alt="advantages icon" class="advantages-item__image" />
+							</div>
+							<div class="advantages-item__body">
+								<h4 class="advantages-item__title">
+									100% Гарантия приживаемости
+								</h4>
+
+								<p class="advantages-item__text">
+									Наша клиника гарантирует рост волос на протяжении всей жизни
+									или возвращает деньги
+								</p>
+							</div>
+						</div>
+						<div class="our-advantages__item advantages-item">
+							<div class="advantages-item__image-wrap">
+								<img src="img/advantages/1.svg" alt="advantages icon" class="advantages-item__image" />
+							</div>
+							<div class="advantages-item__body">
+								<h4 class="advantages-item__title">
+									Безболезненная процедура
+								</h4>
+								<p class="advantages-item__text">
+									Специалисты нашей клиники заботятся о комфорте и
+									безопасности каждого клиента во время операции
+								</p>
+							</div>
+						</div>
+						<div class="our-advantages__item advantages-item">
+							<div class="advantages-item__image-wrap">
+								<img src="img/advantages/1.svg" alt="advantages icon" class="advantages-item__image" />
+							</div>
+							<div class="advantages-item__body">
+								<h4 class="advantages-item__title">
+									Любые объемы за один день
+								</h4>
+
+								<p class="advantages-item__text">
+									Полный цикл пересадки волос займет всего 1 день
+								</p>
+							</div>
+						</div>
+						<div class="our-advantages__item advantages-item">
+							<div class="advantages-item__image-wrap">
+								<img src="img/advantages/1.svg" alt="advantages icon" class="advantages-item__image" />
+							</div>
+							<div class="advantages-item__body">
+								<h4 class="advantages-item__title">Оборудование</h4>
+								<p class="advantages-item__text">
+									Клиника использует современное оборудование для
+									безболезненной пересадки волос
+								</p>
+							</div>
+						</div>
+						<div class="our-advantages__item advantages-item advantages-item_centered">
+							<div class="advantages-item__image-wrap">
+								<img src="img/advantages/1.svg" alt="advantages icon" class="advantages-item__image" />
+							</div>
+							<div class="advantages-item__body">
+								<h4 class="advantages-item__title">Любая стадия облысения</h4>
+								<p class="advantages-item__text">
+									Наша клиника работает с различными стадиями облысения по
+									фиксированной цене
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__consultation consultation">
+				<div class="consultation__container">
+					<div class="consultation__image-wrap">
+						<picture><source srcset="img/consultation/1.webp" type="image/webp"><img class="consultation__image" src="img/consultation/1.jpg" alt="consultation image" /></picture>
+					</div>
+					<form class="consultation__form main-form">
+						<h2 class="main-form__title main-title">
+							Запишитесь на консультацию
+						</h2>
+						<span class="main-form__subtitle">
+							Мы свяжемся с вами и уточним все детали
+						</span>
+						<div class="main-form__body">
+							<input required type="tel" name="phone" id="main-form__tel" class="main-form__input" placeholder="Телефон" />
+							<input required type="text" name="name" id="main-form__name" class="main-form__input" placeholder="Имя" />
+							<button type="submit" class="main-form__button main-button">
+								Записаться
+							</button>
+						</div>
+					</form>
+				</div>
+			</section>
+			<button class="up-button" type="button"></button>
+			<div class="social">
+				<div class="social__wrapper">
+					<div class="social__body">
+						<div class="social__header">
+							<img src="img/social/1.svg" alt="social avatar" class="social__avatar" />
+							<span class="social__response-time">Обычно отвечает в течение одной минуты.</span>
+							<button type="button" class="social__close-button"></button>
+						</div>
+						<div class="social__chat-window">
+							<div class="social__message-wrap">
+								<span class="social__message">Здравствуйте, если у вас имеется какой-то вопрос - можете задать
+									его здесь.</span>
+								<span class="social__message-time">17:40</span>
+							</div>
+						</div>
+						<div class="social__bottom">
+							<a href="#" target="_blank" class="social__message-button">Написать</a>
+						</div>
+					</div>
+
+					<a href="#" class="social__open-button">WhatsApp
+						<span class="social__anim" id="social__anim1"></span>
+						<span class="social__anim" id="social__anim2"></span>
+						<span class="social__anim" id="social__anim3"></span>
+					</a>
+				</div>
+			</div>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__item">
+					<a href="index.html" class="footer__logotype main-logotype">
+						<img class="main-logotype__logo" src="img/header/logo.svg" alt="logo" />
+					</a>
+					<p class="footer__rights-reserved">2022 Все права защищены</p>
+				</div>
+				<div class="footer__item">
+					<a href="tel:+79003331040" class="footer__tel"> +7900 333 10 40 </a>
+					<div class="footer__adress">г.Москва, Варшавское ш., 106</div>
+					<span class="footer__work-time">Ежедневно с 10 до 18:00</span>
+					<a href="" class="footer__get-there">Как проехать</a>
+				</div>
+				<div class="footer__item">
+					<ul class="footer__socials socials">
+						<li class="socials__item">
+							<a href="" class="socials__icon-wrap">
+								<img src="img/footer/11.svg" alt="" class="socials__icon">
+							</a>
+						</li>
+						<li class="socials__item">
+							<a href="" class="socials__icon-wrap">
+								<img src="img/footer/22.svg" alt="" class="socials__icon">
+							</a>
+						</li>
+						<li class="socials__item">
+							<a href="" class="socials__icon-wrap">
+								<img src="img/footer/33.svg" alt="" class="socials__icon">
+							</a>
+						</li>
+						<li class="socials__item">
+							<a href="" class="socials__icon-wrap">
+								<img src="img/footer/44.svg" alt="" class="socials__icon">
+							</a>
+						</li>
+					</ul>
+					<span>Lorem, ipsum.</span>
+					<span>Lorem.</span>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div class="popup__bg">
+		<form class="popup__form popup main-form">
+			<button type="button" class="close-popup"></button>
+			<h2 class="main-form__title main-title main-form__title_popup">Запишитесь на консультацию</h2>
+			<span class="main-form__subtitle main-form__subtitle_popup">
+				Мы свяжемся с вами и уточним все детали
+			</span>
+			<div class="main-form__body main-form__body_popup">
+				<input required type="tel" name="phone" id="main-form__tel" class="main-form__input main-form__input_popup" placeholder="Телефон" />
+				<input required type="text" name="name" id="main-form__name" class="main-form__input main-form__input_popup" placeholder="Имя" />
+				<button type="submit" class="main-form__button main-button main-form__button_popup">
+					Записаться
+				</button>
+				<div class="main-form__policy">
+					Нажимая на кнопку, вы даете
+					<span>согласие на обработку персональных данных </span> и соглашаетесь c
+					<a class="main-form__link-policy" href="privacy-policy.html">политикой конфиденциальности</a>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script src="js/app.min.js?_v=20231215211918"></script>
+</body>
+
+</html>

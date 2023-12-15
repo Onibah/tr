@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231215211918" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?_v=20231215211918"></script>
+
+	<!-- Подключение библиотеки Fancybox -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20231215211918" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20231215211918"></script>
+</head>
+
+<body>
+	<div id="page-preloader" class="preloader">
+		<div class="loader"></div>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logotype-wrapper">
+					<a href="index.html" class="header__logotype main-logotype">
+						<img class="main-logotype__logo" src="img/header/logo.svg" alt="logo" />
+					</a>
+				</div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li data-spollers class="menu__item">
+								<span type="button" data-spoller class="menu__link menu__link_spoller">Услуги</span>
+								<div class="menu__item-spoller-body">
+									<a href="services-details.html" class="menu__link">Услуги детально</a>
+									<a href="services-details.html" class="menu__link">Услуги</a>
+									<a href="services-details.html" class="menu__link">Услуги</a>
+									<a href="services-details.html" class="menu__link">Услуги</a>
+								</div>
+							</li>
+
+							<li class="menu__item">
+								<a href="results.html" class="menu__link">Результаты</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto=".page__our-advantages" href="index.html#page__our-advantages" class="menu__link">О нас</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto=".questions_instructions" href="services-details.html#questions_instructions" class="menu__link">Инструкции</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto=".footer" href="#footer" class="menu__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="menu__info info-menu">
+						<a href="#" class="info-menu__adress">
+							<img class="info-menu__icon-adress" src="img/header/location_outline.svg" alt="" />
+							<span>Чебоксары, <br />
+								Энтузиастов 1А</span>
+						</a>
+						<!-- <div class="info-menu__calendar">
+					<img
+						class="info-menu__icon-calendar"
+						src="img/header/calendar.svg"
+						alt=""
+					/>
+					с 09:00 - 20:00
+					<span>пн-сб </span>
+				</div> -->
+						<a href="tel:+79003331040" class="info-menu__tel">
+							<img class="info-menu__icon-tel" src="img/header/phone.svg" alt="" />
+							+7900 333 10 40
+						</a>
+					</div>
+				</div>
+				<button type="button" class="header__button main-button open-popup">
+					Заказать звонок
+				</button>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+
+		<main class="services-details-page">
+			<section class="services-details-page__main-page services-main-page">
+				<div class="services-main-page__container">
+					<h1 class="services-main-page__title main-title">
+						Пересадка волос на голове
+					</h1>
+					<div class="services-main-page__body">
+						<div class="services-main-page__top">
+							<p class="services-main-page__text">
+								Пересадка волос — это безболезненная и комфортная процедура,
+								которая проводится всего за один день. Волосы
+								восстанавливаются путём извлечения фолликулярных объединений
+								бесшовным методом, благодаря чему на головах наших пациентов
+								не остаётся следов, шрамов и других повреждений.
+							</p>
+							<p class="services-main-page__text">
+								Первый результат вы увидите спустя 10—14 дней. За это время
+								пересаженные волосы как правило отрастают на 0,3—0.5 см (так
+								называемый «Ёжик»). Густота же начнёт появляться на 6—8 месяце
+								после процедуры. Итоговый результат можно оценивать спустя 10
+								— 12 месяцев.
+							</p>
+						</div>
+						<div class="services-main-page__bottom">
+							<picture><source srcset="img/services-details/1.webp" type="image/webp"><img alt="services image" src="img/services-details/1.jpg" class="services-main-page__image" /></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="services-details-page__block some-block">
+				<div class="some-block__container">
+					<div class="some-block__left">
+						<h3 class="some-block__title">Lorem ipsum dolor sit amet.</h3>
+						<div class="some-block__image-wrap">
+							<picture><source srcset="img/services-details/1.webp" type="image/webp"><img alt="image" src="img/services-details/1.jpg" class="some-block__image" /></picture>
+						</div>
+					</div>
+					<p class="some-block__text">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+						tenetur deserunt esse harum qui modi vitae perferendis vel
+						eligendi assumenda! Natus, corrupti beatae. Et qui unde excepturi
+						tempore libero nisi? Sint, libero cum id quibusdam nam, saepe,
+						accusantium architecto possimus sequi ullam perferendis atque
+						corporis tenetur exercitationem illum. Corporis iure quis porro
+						reprehenderit facilis eius unde sapiente veniam odio nam.
+					</p>
+				</div>
+			</div>
+
+			<section class="services-details-page__stages stages">
+				<div class="stages__container">
+					<h2 class="stages__title main-title">Этапы пересадки</h2>
+					<div class="stages__content">
+						<div class="stages__top top-stages">
+							<ol class="top-stages__list list-top-stages">
+								<li class="list-top-stages__item">
+									Проверка анализов на вирусы — гепатит C / B и ВИЧ
+								</li>
+								<li class="list-top-stages__item">
+									Формирование передней линии роста волос / зоны посадки в
+									соответсвии с пожеланием пациента и возможностями донорской
+									зоны
+								</li>
+								<li class="list-top-stages__item">
+									Бритье донорской зоны и зоны трансплантации
+								</li>
+								<li class="list-top-stages__item">
+									Дезинфекция и анестезия донорской зоны
+								</li>
+								<li class="list-top-stages__item">
+									Извлечение и бережный сбор графтов
+								</li>
+								<li class="list-top-stages__item">Обед для пациента</li>
+								<li class="list-top-stages__item">
+									Анестезия зоны трансплантации
+								</li>
+							</ol>
+
+							<ol class="top-stages__list list-top-stages list-top-stages_second-list">
+								<li class="list-top-stages__item">
+									Открытие каналов («лунок» для будущих волос)
+								</li>
+								<li class="list-top-stages__item">
+									Посадка извлечённых графтов в открытые каналы
+								</li>
+								<li class="list-top-stages__item">Плазмотерапия для волос</li>
+								<li class="list-top-stages__item">
+									Наложение повязки на донорскую область
+								</li>
+								<li class="list-top-stages__item">
+									Выдача полного послеоперационного комплекта бесплатно
+								</li>
+								<li class="list-top-stages__item">
+									Выдача списка рекомендаций и ограничений после пересадки
+									волос
+								</li>
+								<li class="list-top-stages__item">
+									Снятие повязки через сутки. Обработка донорской области,
+									бережное мытьё
+								</li>
+							</ol>
+						</div>
+						<div class="stages__bottom bottom-stages">
+							<h3 class="bottom-stages__title main-title">
+								Стоимость пересадки <br />
+								волос на голове 150 000 р.
+							</h3>
+							<button type="button" class="bottom-stages__button main-button open-popup">
+								Записаться
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="services-details-page__results results">
+				<div class="results__container">
+					<h2 class="results__title main-title">
+						Результаты пересадки волос
+					</h2>
+					<div class="results__images-list">
+						<div class="results__item">
+							<picture><source srcset="img/results/1.webp" type="image/webp"><img src="img/results/1.jpg" alt="" class="results__image" /></picture>
+						</div>
+						<div class="results__item">
+							<picture><source srcset="img/services/2.webp" type="image/webp"><img src="img/services/2.jpg" alt="" class="results__image" /></picture>
+						</div>
+						<div class="results__item">
+							<picture><source srcset="img/results/1.webp" type="image/webp"><img src="img/results/1.jpg" alt="" class="results__image" /></picture>
+						</div>
+						<div class="results__item">
+							<picture><source srcset="img/results/1.webp" type="image/webp"><img src="img/results/1.jpg" alt="" class="results__image" /></picture>
+						</div>
+					</div>
+					<a href="results.html" class="results__button main-button">
+						Смотреть еще
+					</a>
+				</div>
+			</section>
+			<section class="services-details-page__consultation consultation">
+				<div class="consultation__container">
+					<div class="consultation__image-wrap">
+						<picture><source srcset="img/services-details/b.webp" type="image/webp"><img class="consultation__image" src="img/services-details/b.jpeg" alt="consultation image" /></picture>
+					</div>
+					<form class="consultation__form main-form">
+						<h2 class="main-form__title main-title">
+							Запишитесь на консультацию
+						</h2>
+						<span class="main-form__subtitle">
+							Мы свяжемся с вами и уточним все детали
+						</span>
+						<div class="main-form__body">
+							<input required type="tel" name="phone" id="main-form__tel" class="main-form__input" placeholder="Телефон" />
+							<input required type="text" name="name" id="main-form__name" class="main-form__input" placeholder="Имя" />
+							<button type="submit" class="main-form__button main-button">
+								Записаться
+							</button>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section class="services-details-page__questions questions questions_instructions">
+				<div class="questions__container">
+					<h2 class="questions__title main-title">
+						Как подготовиться к процедуре
+					</h2>
+					<div class="questions__body">
+						<div data-one-spoller data-spollers class="questions__spollers spollers-questions">
+							<div class="spollers-questions__item">
+								<button type="button" data-spoller class="spollers-questions__title">
+									Анализы
+								</button>
+								<div class="spollers-questions__body">
+									<ul class="spollers-questions__list list-spollers-questions">
+										<li class="list-spollers-questions__item">
+											В день процедуры принесите с собой результаты анализов
+											на отсутствие вирусов гепатита B, C и ВИЧ. О сдаче
+											анализов позаботьтесь заранее. Срок годности анализов не
+											более 1 месяца до процедуры пересадки волос.
+										</li>
+										<li class="list-spollers-questions__item">
+											Всем пациентам старше 55-ти лет и пациентам, имеющим
+											заболевания сердца, в день трансплантации иметь с собой
+											кардиограмму, а также заключение кардиолога с
+											лояльностью проведения процедуры пересадки волос.
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="spollers-questions__item">
+								<button type="button" data-spoller class="spollers-questions__title">
+									Медицинские препараты
+								</button>
+								<div class="spollers-questions__body">
+									<ul class="spollers-questions__list list-spollers-questions">
+										<li class="list-spollers-questions__item">
+											Не использовать лечебные шампуни и препараты, содержащие
+											миноксидил, за 5—7 дней до проведения процедуры.
+										</li>
+										<li class="list-spollers-questions__item">
+											Если вы принимаете препараты, разжижающие кровь, то от
+											них следует отменить за 5 дней до дня трансплантации.
+										</li>
+										<li class="list-spollers-questions__item">
+											Не употребляйте любые алкогольные и / или
+											наркотикосодержащие вещества и напитки. Не курите кальян
+											за 7 дней до процедуры.
+										</li>
+										<li class="list-spollers-questions__item">
+											В день процедуры обязательно нужно плотно позавтракать
+											или пообедать в зависимости от назначенного времени
+											процедуры. Натощак делать пересадку НЕЛЬЗЯ!
+										</li>
+										<li class="list-spollers-questions__item">
+											Вы должны будете проинформировать Доктора о любых
+											медицинских препаратах и веществах, которые вы принимали
+											за 5 дней до дня процедуры.
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="spollers-questions__item">
+								<button type="button" data-spoller class="spollers-questions__title">
+									Одежда
+								</button>
+								<div class="spollers-questions__body">
+									<ul class="spollers-questions__list list-spollers-questions">
+										<li class="list-spollers-questions__item">
+											Из одежды на Вас должна быть рубашка (кофта) на
+											пуговицах или на молнии. Это должна быть одежда, которая
+											одевается и снимается НЕ через голову. Одежда не должна
+											касаться пересаженных волос.
+										</li>
+										<li class="list-spollers-questions__item">
+											Кроме того, возьмите с собой на процедуру сменные чистые
+											штаны или шорты (в тех, в которых Вам будет удобно
+											лежать). Не рекомендуется брать джинсы или любые
+											обтягивающие брюки, Вам будет неудобно.
+										</li>
+										<li class="list-spollers-questions__item">
+											Возьмите с собой зонт. Он может Вам пригодиться, если
+											пойдёт дождь или снег, когда вы будете уезжать от нас.
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="spollers-questions__item">
+								<button type="button" data-spoller class="spollers-questions__title">
+									Прическа
+								</button>
+								<div class="spollers-questions__body">
+									<ul class="spollers-questions__list list-spollers-questions">
+										<li class="list-spollers-questions__item">
+											Накануне перед процедурой, дома вечером, необходимо
+											принять душ и вымыть волосы шампунем, которым Вы
+											пользуетесь обычно. Важно сделать это НЕ в день
+											пересадки, а ЗА ДЕНЬ.
+										</li>
+										<li class="list-spollers-questions__item">
+											Не следует наносить на волосы лак, гель и прочие
+											средства для волос.
+										</li>
+										<li class="list-spollers-questions__item">
+											Не стригитесь заранее, приходите к нам с той причёской,
+											которую Вы обычно носите, или с длинными волосами.
+										</li>
+										<li class="list-spollers-questions__item">
+											При пересадке волос на лицо (усы, борода) необходимо
+											иметь 3-дневную щетину. ОБЯЗАТЕЛЬНО!
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="spollers-questions__item">
+								<button type="button" data-spoller class="spollers-questions__title">
+									Дополнительные рекомендации
+								</button>
+								<div class="spollers-questions__body">
+									<p class="spollers-questions__text">
+										За неделю до процедуры мы рекомендуем:
+									</p>
+									<ul class="spollers-questions__list list-spollers-questions">
+										<li class="list-spollers-questions__item">
+											проделать самомассаж в донорской области и в зоне
+											будущей пересадки. Можно использовать мезороллер, чтобы
+											улучшить микроцилькуляцию крови.
+										</li>
+										<li class="list-spollers-questions__item">
+											пройти процедуру плазматерапии.
+										</li>
+										<li class="list-spollers-questions__item">
+											пропить Аскорутин (витамин) — по 1 таблетке 3 раза в
+											день. Он улучшает проницаемость капилляров, укрепляет
+											сосудистую стенку, уменьшает отёчность (вкусные
+											витаминки).
+										</li>
+									</ul>
+									<p class="spollers-questions__text">
+										За месяц до процедуры рекомендуем также пропить комплекс
+										витаминов в составе которых есть биотин. За три дня до дня
+										процедуры необходимо прекратить приём всех витаминов.
+									</p>
+									<p class="spollers-questions__text">
+										Все что способствует улучшению микроциркуляции крови в
+										области посадки максимально полезно! Одна из самых важных
+										задач после успешной трансплантации волос — ПИТАНИЕ ВОЛОС!
+										Чем лучше реология крови и микроциркуляция, тем больше
+										волос сможет прижиться!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="services-details-page__transparent transparent">
+				<div class="transparent__background"></div>
+			</div>
+
+			<section class="services-details-page__questions questions">
+				<div class="questions__container">
+					<h2 class="questions__title main-title">
+						Что делать после пересадки волос
+					</h2>
+					<div class="questions__body-wrap">
+						<div class="questions__body questions__body_flex">
+							<div data-one-spoller data-spollers class="questions__spollers spollers-questions">
+								<div class="spollers-questions__item">
+									<button type="button" data-spoller class="spollers-questions__title">
+										3 дня
+									</button>
+									<div class="spollers-questions__body">
+										Не потеть (исключить горячую еду / чай / кофе).
+									</div>
+								</div>
+								<div class="spollers-questions__item">
+									<button type="button" data-spoller class="spollers-questions__title">
+										5 дней
+									</button>
+									<div class="spollers-questions__body">Пить много воды.</div>
+								</div>
+								<div class="spollers-questions__item">
+									<button type="button" data-spoller class="spollers-questions__title">
+										10 дней
+									</button>
+									<div class="spollers-questions__body">
+										<ul class="spollers-questions__list list-spollers-questions">
+											<li class="list-spollers-questions__item">
+												Исключить секс.
+											</li>
+											<li class="list-spollers-questions__item">
+												Спать со специальной подушкой.
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="spollers-questions__item">
+									<button type="button" data-spoller class="spollers-questions__title">
+										14 дней
+									</button>
+									<div class="spollers-questions__body">
+										<ul class="spollers-questions__list list-spollers-questions">
+											<li class="list-spollers-questions__item">
+												На 12—14-й день снять образовавшуюся корку согласно
+												инструкции.
+											</li>
+											<li class="list-spollers-questions__item">
+												Не носить головной убор.
+											</li>
+											<li class="list-spollers-questions__item">
+												Не заниматься физическим трудом.
+											</li>
+											<li class="list-spollers-questions__item">
+												Избегать загрязнённых и пыльных помещений.
+											</li>
+											<li class="list-spollers-questions__item">
+												Исключить алкоголь и никотин.
+											</li>
+											<li class="list-spollers-questions__item">
+												Не надевать одежду через голову.
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="questions__body questions__body_flex">
+							<div data-one-spoller data-spollers class="questions__spollers spollers-questions">
+								<div class="spollers-questions__item">
+									<button type="button" data-spoller class="spollers-questions__title">
+										1 месяц
+									</button>
+									<div class="spollers-questions__body">
+										<ul class="spollers-questions__list list-spollers-questions">
+											<li class="list-spollers-questions__item">
+												Не паниковать после шокового выпадения волос.
+											</li>
+											<li class="list-spollers-questions__item">
+												Избегать сауну, баню и иные длительные воздействия
+												высоких температур.
+											</li>
+											<li class="list-spollers-questions__item">
+												Не стричь пересаженные волосы ножницами.
+											</li>
+											<li class="list-spollers-questions__item">
+												Не стричь донорскую зону.
+											</li>
+											<li class="list-spollers-questions__item">
+												Исключить резкие движения головой.
+											</li>
+											<li class="list-spollers-questions__item">
+												Исключить занятия спортом.
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="spollers-questions__item">
+									<button type="button" data-spoller class="spollers-questions__title">
+										3 месяца
+									</button>
+									<div class="spollers-questions__body">
+										<p class="spollers-questions__text">
+											За месяц до процедуры рекомендуем также пропить комплекс
+											витаминов в составе которых есть биотин. За три дня до
+											дня процедуры необходимо прекратить приём всех
+											витаминов.
+										</p>
+									</div>
+								</div>
+								<div class="spollers-questions__item">
+									<button type="button" data-spoller class="spollers-questions__title">
+										7 месяцев
+									</button>
+									<div class="spollers-questions__body">
+										<ul class="spollers-questions__list list-spollers-questions">
+											<li class="list-spollers-questions__item">
+												Не стричь пересаженные волосы триммером.
+											</li>
+											<li class="list-spollers-questions__item">
+												Не красить волосы.
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="services-details-page__questions questions">
+				<div class="questions__container">
+					<h2 class="questions__title main-title">
+						Часто задаваемые вопросы
+					</h2>
+					<div class="questions__body">
+						<div data-one-spoller data-spollers class="questions__spollers spollers-questions">
+							<div class="spollers-questions__item">
+								<button type="button" data-spoller class="spollers-questions__title">
+									Сколько времени занимает операция
+								</button>
+								<div class="spollers-questions__body">
+									Все этапы процедуры занимают как правило около 6—10 часов в
+									зависимости от объёма пересаживаемых графов, сложности и
+									деликатности работы.
+								</div>
+							</div>
+							<div class="spollers-questions__item">
+								<button type="button" data-spoller class="spollers-questions__title">
+									Это болезненная процендура
+								</button>
+								<div class="spollers-questions__body">
+									Нет. Мы работаем бесшовным методом FUE. Серьёзного
+									хирургического вмешательства он не предполагает. Минимальные
+									болевые ощущения могут возникать только на этапе анестезии
+									на кратковременный промежуток времени (не более 3—5 мин.).
+								</div>
+							</div>
+							<div class="spollers-questions__item">
+								<button type="button" data-spoller class="spollers-questions__title">
+									Когда пройдут покраснения
+								</button>
+								<div class="spollers-questions__body">
+									Период восстановления у всех индивидуальный. Покраснения
+									донорской зоны проходят в среднем за 10—20 дней. Кожа в зоне
+									трансплантации восстанавливается в течение 1—3 месяцев.
+								</div>
+							</div>
+							<div class="spollers-questions__item">
+								<button type="button" data-spoller class="spollers-questions__title">
+									Могут ли выпасть пересаженные волосы
+								</button>
+								<div class="spollers-questions__body">
+									Нет. Пересаженные волосы не выпадают. Они не подвержены
+									влиянию гормона дигидротестостерона.
+								</div>
+							</div>
+							<div class="spollers-questions__item">
+								<button type="button" data-spoller class="spollers-questions__title">
+									Когда будет виден результат
+								</button>
+								<div class="spollers-questions__body">
+									Первый результат вы увидите спустя 10—14 дней. За это время
+									пересаженные волосы как правило отрастают на 0,3—0.5 см (так
+									называемый «Ёжик»). Густота же начнёт появляться на 6—8
+									месяце после процедуры. Итоговый результат можно оценивать
+									спустя 10—12 месяцев.
+								</div>
+							</div>
+							<div class="spollers-questions__item">
+								<button type="button" data-spoller class="spollers-questions__title">
+									Можно ли после операции носить головной убор
+								</button>
+								<div class="spollers-questions__body">
+									Мы рекомендуем надевать головной убор не ранее чем через 10
+									дней с момента операции. В случае острой необходимости на
+									5-й день можно аккуратно надеть панамку. Главное, чтобы она
+									не давила на голову и свободно сидела.
+								</div>
+							</div>
+							<div class="spollers-questions__item">
+								<button type="button" data-spoller class="spollers-questions__title">
+									Есть ли рассрочка
+								</button>
+								<div class="spollers-questions__body">
+									Да! Мы понимаем, что не у всех есть возможность оплатить всю
+									стоимость процедуры сразу, поэтому даём возможность оформить
+									рассрочку. Рассрочка оформляется через Банк, при его
+									одобрении. ООО «ГеоГрафт» берёт часть нагрузки рассрочки на
+									себя.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="services-details-page__consultation consultation consultation_padding-bottom">
+				<div class="consultation__container">
+					<div class="consultation__image-wrap">
+						<picture><source srcset="img/services-details/a.webp" type="image/webp"><img class="consultation__image" src="img/services-details/a.jpeg" alt="consultation image" /></picture>
+					</div>
+					<form class="consultation__form main-form">
+						<h2 class="main-form__title main-title">
+							Запишитесь на консультацию
+						</h2>
+						<span class="main-form__subtitle">
+							Мы свяжемся с вами и уточним все детали
+						</span>
+						<div class="main-form__body">
+							<input required type="tel" name="phone" id="main-form__tel" class="main-form__input" placeholder="Телефон" />
+							<input required type="text" name="name" id="main-form__name" class="main-form__input" placeholder="Имя" />
+							<button type="submit" class="main-form__button main-button">
+								Записаться
+							</button>
+						</div>
+					</form>
+				</div>
+			</section>
+			<button class="up-button" type="button"></button>
+			<div class="social">
+				<div class="social__wrapper">
+					<div class="social__body">
+						<div class="social__header">
+							<img src="img/social/1.svg" alt="social avatar" class="social__avatar" />
+							<span class="social__response-time">Обычно отвечает в течение одной минуты.</span>
+							<button type="button" class="social__close-button"></button>
+						</div>
+						<div class="social__chat-window">
+							<div class="social__message-wrap">
+								<span class="social__message">Здравствуйте, если у вас имеется какой-то вопрос - можете задать
+									его здесь.</span>
+								<span class="social__message-time">17:40</span>
+							</div>
+						</div>
+						<div class="social__bottom">
+							<a href="#" target="_blank" class="social__message-button">Написать</a>
+						</div>
+					</div>
+
+					<a href="#" class="social__open-button">WhatsApp
+						<span class="social__anim" id="social__anim1"></span>
+						<span class="social__anim" id="social__anim2"></span>
+						<span class="social__anim" id="social__anim3"></span>
+					</a>
+				</div>
+			</div>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__item">
+					<a href="index.html" class="footer__logotype main-logotype">
+						<img class="main-logotype__logo" src="img/header/logo.svg" alt="logo" />
+					</a>
+					<p class="footer__rights-reserved">2022 Все права защищены</p>
+				</div>
+				<div class="footer__item">
+					<a href="tel:+79003331040" class="footer__tel"> +7900 333 10 40 </a>
+					<div class="footer__adress">г.Москва, Варшавское ш., 106</div>
+					<span class="footer__work-time">Ежедневно с 10 до 18:00</span>
+					<a href="" class="footer__get-there">Как проехать</a>
+				</div>
+				<div class="footer__item">
+					<ul class="footer__socials socials">
+						<li class="socials__item">
+							<a href="" class="socials__icon-wrap">
+								<img src="img/footer/11.svg" alt="" class="socials__icon">
+							</a>
+						</li>
+						<li class="socials__item">
+							<a href="" class="socials__icon-wrap">
+								<img src="img/footer/22.svg" alt="" class="socials__icon">
+							</a>
+						</li>
+						<li class="socials__item">
+							<a href="" class="socials__icon-wrap">
+								<img src="img/footer/33.svg" alt="" class="socials__icon">
+							</a>
+						</li>
+						<li class="socials__item">
+							<a href="" class="socials__icon-wrap">
+								<img src="img/footer/44.svg" alt="" class="socials__icon">
+							</a>
+						</li>
+					</ul>
+					<span>Lorem, ipsum.</span>
+					<span>Lorem.</span>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div class="popup__bg">
+		<form class="popup__form popup main-form">
+			<button type="button" class="close-popup"></button>
+			<h2 class="main-form__title main-title main-form__title_popup">Запишитесь на консультацию</h2>
+			<span class="main-form__subtitle main-form__subtitle_popup">
+				Мы свяжемся с вами и уточним все детали
+			</span>
+			<div class="main-form__body main-form__body_popup">
+				<input required type="tel" name="phone" id="main-form__tel" class="main-form__input main-form__input_popup" placeholder="Телефон" />
+				<input required type="text" name="name" id="main-form__name" class="main-form__input main-form__input_popup" placeholder="Имя" />
+				<button type="submit" class="main-form__button main-button main-form__button_popup">
+					Записаться
+				</button>
+				<div class="main-form__policy">
+					Нажимая на кнопку, вы даете
+					<span>согласие на обработку персональных данных </span> и соглашаетесь c
+					<a class="main-form__link-policy" href="privacy-policy.html">политикой конфиденциальности</a>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script src="js/app.min.js?_v=20231215211918"></script>
+</body>
+
+</html>
