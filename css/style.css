@@ -2000,7 +2000,7 @@ a.main-form__link-policy {
 }
 
 .no-webp .transparent__background::before{
-  background: url("../img/services-details/bg.jpeg") 70% 50%/cover no-repeat fixed; }
+  background-image: url("../img/services-details/bg.jpeg"); }
 
 .transparent__background::before {
   content: "";
@@ -2009,6 +2009,10 @@ a.main-form__link-policy {
   left: 0;
   width: 100%;
   height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 70% 50%;
+  background-attachment: fixed;
   z-index: -1;
 }
 
@@ -2117,7 +2121,15 @@ a.main-form__link-policy {
   min-width: 300px;
 }
 
-.some-block__container {
+.some-block__title {
+  font-size: 24px;
+}
+
+.some-block__title:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.some-block__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2131,14 +2143,6 @@ a.main-form__link-policy {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
-}
-
-.some-block__title {
-  font-size: 24px;
-}
-
-.some-block__title:not(:last-child) {
-  margin-bottom: 10px;
 }
 
 .some-block__image-wrap {
@@ -2696,7 +2700,7 @@ a.main-form__link-policy {
     padding: 20px;
   }
 
-  .some-block__container {
+  .some-block__content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -2877,4 +2881,4 @@ a.main-form__link-policy {
 
 .webp .social__close-button::after{ background: url(../img/social/2.webp) 0 0/contain no-repeat; }
 
-.webp .transparent__background::before{ background: url(../img/services-details/bg.webp) 70% 50%/cover no-repeat fixed; }
+.webp .transparent__background::before{ background-image: url(../img/services-details/bg.webp); }

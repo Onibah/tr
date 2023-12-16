@@ -3484,17 +3484,19 @@
                 }
             }
         }
-        if (getHash()) {
-            let goToHash;
-            if (document.querySelector(`#${getHash()}`)) goToHash = `#${getHash()}`; else if (document.querySelector(`.${getHash()}`)) {
-                goToHash = `.${getHash()}`;
-                console.log(document.querySelector(`.${getHash()}`).offsetTop);
-                console.log(document.querySelector(`.${getHash()}`).offsetHeight);
+        window.addEventListener("load", (() => {
+            if (getHash()) {
+                let goToHash;
+                if (document.querySelector(`#${getHash()}`)) goToHash = `#${getHash()}`; else if (document.querySelector(`.${getHash()}`)) {
+                    goToHash = `.${getHash()}`;
+                    console.log(document.querySelector(`.${getHash()}`).offsetTop);
+                    console.log(document.querySelector(`.${getHash()}`).offsetHeight);
+                }
+                window.scrollTo({
+                    top: document.querySelector(`.${getHash()}`).offsetTop
+                });
             }
-            window.scrollTo({
-                top: document.querySelector(`.${getHash()}`).offsetTop
-            });
-        }
+        }));
     }
     setTimeout((() => {
         if (addWindowScrollEvent) {
