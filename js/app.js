@@ -3620,6 +3620,7 @@
     }
     window.addEventListener("load", (() => {
         if (upButton) upButton.addEventListener("click", pageScrollUp);
+        if (navigator.userAgent.toLowerCase().match(/(ipad|iphone)/)) document.documentElement.classList.add("ios-on");
     }));
     addEventListener("scroll", (function() {
         const isButtonActive = upButton.classList.contains("up-button-active");

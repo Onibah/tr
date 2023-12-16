@@ -182,7 +182,7 @@ body {
   position: absolute;
   width: 50px;
   height: 50px;
-  top: 0;
+  top: -5px;
   right: 0;
   background: transparent;
   -webkit-transform: rotate(45deg);
@@ -254,6 +254,10 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   font-size: 35px;
+}
+
+.main-title_text-align-left {
+  text-align: left;
 }
 
 .main-title:not(:last-child) {
@@ -451,6 +455,9 @@ body {
   border-radius: 7px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .control-buttons__slider-button-next:active {
@@ -581,11 +588,12 @@ body {
 .main-form__button {
   border-radius: 7px;
   padding: 20px;
+  font-size: 16px;
 }
 
 .main-form__policy {
   text-align: center;
-  line-height: 25px;
+  line-height: 1.2;
   font-size: 18px;
 }
 
@@ -1644,10 +1652,6 @@ a.main-form__link-policy {
   margin-bottom: 90px;
 }
 
-.results__title {
-  text-align: left;
-}
-
 .results__title:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -2014,6 +2018,10 @@ a.main-form__link-policy {
   background-position: 70% 50%;
   background-attachment: fixed;
   z-index: -1;
+}
+
+.ios-on .transparent__background::before {
+  background-attachment: scroll;
 }
 
 .top-stages {
@@ -2558,7 +2566,7 @@ a.main-form__link-policy {
 
   .main-form__title_popup {
     padding-top: 20px;
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .main-form__title_popup:not(:last-child) {
@@ -2779,6 +2787,29 @@ a.main-form__link-policy {
   }
 }
 
+@media (max-width: 23.49875em) {
+  .main-form__subtitle_popup:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .main-form__body_popup {
+    row-gap: 10px;
+  }
+
+  .main-form__input_popup {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .main-form__button_popup {
+    padding: 10px;
+  }
+
+  .main-form__policy {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 23.12375em) {
   .header__container {
     -webkit-column-gap: 10px;
@@ -2813,9 +2844,9 @@ a.main-form__link-policy {
   }
 
   .control-buttons__slider-button-next:hover {
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.1) rotate(180deg);
+        -ms-transform: scale(1.1) rotate(180deg);
+            transform: scale(1.1) rotate(180deg);
   }
 
   .up-button:hover {
